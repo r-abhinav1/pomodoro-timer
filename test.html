@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #typing-effect {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 300px;
+            height: 100px;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="typing-effect"></div>
+    <script>
+        const textToType = "Welcome to Pomorodo Timer.";
+        const typingSpeed = 70;
+
+        const typingElement = document.getElementById("typing-effect");
+        let charIndex = 0;
+
+        function typeText() {
+            if (charIndex < textToType.length-1) {
+                let str=typingElement.textContent;
+                if(str.length==0){
+                    typingElement.textContent += textToType.charAt(charIndex)+"|";
+                }
+                else{
+                    typingElement.textContent=typingElement.textContent.slice(0,-1)+textToType.charAt(charIndex)+"|";
+                }
+                
+                charIndex++;
+                setTimeout(typeText, typingSpeed);
+            }
+            else if(charIndex==textToType.length-1){
+                typingElement.textContent=typingElement.textContent.slice(0,-1)+textToType.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeText, typingSpeed);
+            }
+        }
+        window.onload = typeText;
+    </script>
+
+</body>
+
+</html>

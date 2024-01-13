@@ -1,0 +1,355 @@
+* {
+    transition: 0.1s all ease-in-out;
+}
+
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 1000vh;
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+.logoHeader {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+    font-size: 50px;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    color: white;
+    bottom: -20px !important;
+}
+
+.logo.active {
+    bottom: 0 !important;
+    opacity: 1;
+    transition: ease-in-out .5s;
+}
+
+.logo.fade {
+    bottom: 20px !important;
+    opacity: 0;
+    transition: ease-in-out .5s;
+}
+
+/* Timer CSS START*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("assets/lofi3.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+div#timer-container {
+    background-color: rgba(48, 41, 44, 0.949);
+    color: white;
+    width: 238px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 65px;
+    left: 30px;
+}
+
+span#timer {
+    background-color: rgb(20, 19, 19);
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 10px;
+    font-size: 1.8em;
+    font-family: 'Trebuchet MS';
+    letter-spacing: 2px;
+    position: absolute;
+    top: 32px;
+    left: 20px;
+}
+
+span#timer-name {
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bold;
+    font-size: 0.7em;
+    position: absolute;
+    top: 13px;
+    left: 39px;
+}
+
+#startButton,
+#restartButton {
+    border: 0px;
+    padding: 0px;
+    background-color: rgba(48, 41, 44, 0.8);
+    width: fit-content;
+    height: fit-content;
+}
+
+#start-img,
+#restart-img {
+    width: 22px;
+    height: auto;
+    position: relative;
+}
+
+#restart-img {
+    width: 16px;
+}
+
+#startButton {
+    position: absolute;
+    left: 166px;
+    top: 44px;
+}
+
+#restartButton {
+
+    position: absolute;
+    left: 195px;
+    top: 44px;
+
+}
+
+
+#timer-icon {
+    width: 17px;
+    height: auto;
+    position: absolute;
+    top: 11px;
+    left: 21px;
+}
+
+/* Timer CSS End */
+/*----------------------------------------------------------------------------------------*/
+/* ToDo CSS START */
+
+h6 {
+    color: white;
+    position: relative;
+    bottom: 37px;
+    left: 18px;
+}
+
+/* h6::before{
+    content: url("target.png");
+    width: 5px;
+    height: auto;
+} */
+
+img#target {
+    width: 15px;
+    height: auto;
+    position: relative;
+    top: 4px;
+}
+
+.to-container {
+    position: absolute;
+    top: 180px;
+    left: 30px;
+    max-width: 200px;
+    height: fit-content;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(48, 41, 44, 0.95);
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+
+input[type="text"] {
+    border: 2px rgba(96, 95, 95, 0.697) solid;
+    color: white;
+    background-color: rgb(44, 41, 41);
+    border-radius: 15px;
+    font-family: cursive;
+    padding: 10px;
+    width: 80%;
+    height: 20px;
+    position: relative;
+    bottom: 55px;
+    right: 5px;
+}
+
+input::placeholder {
+    font-family: monospace;
+    font-style: italic;
+    font-size: small;
+    color: white;
+}
+
+input:hover {
+    background-color: rgb(48, 45, 45);
+    border: 2px rgba(134, 134, 134, 0.697) solid;
+}
+
+button#add-task {
+    background-color: rgba(44, 41, 41, 0.95);
+    width: fit-content;
+    height: fit-content;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: relative;
+    bottom: 89px;
+    left: 185px;
+}
+
+div#tasks {
+    background-color: black;
+}
+
+button#done {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid rgba(240, 239, 239, 0.734);
+    background-color: rgba(44, 41, 41, 0.95);
+
+}
+
+img#plus {
+    max-width: 30px;
+    max-height: 30px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+
+}
+
+img#cross {
+    width: 20px;
+    height: auto;
+    background-color: rgb(20, 19, 19);
+    border-radius: 50%;
+}
+
+hr#horizontal {
+    border-color: rgb(192, 189, 189);
+
+    padding: 0px;
+}
+
+button#delete {
+    position: absolute;
+    width: 20px;
+    left: 174px;
+    bottom: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(20, 19, 19);
+    border: 0px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul#taskList li {
+    padding: 10px;
+    margin-top: 5px;
+    /* border-bottom: 1px solid #ddd; */
+    background-color: rgb(32, 27, 28);
+    border-radius: 10px;
+    position: relative;
+    align-items: center;
+}
+
+span#li-content {
+    font-family: cursive;
+    font-size: small;
+    color: white;
+    position: relative;
+    left: 5px;
+
+}
+
+#scratch {
+    color: #9B9291;
+    position: relative;
+    left: 5px;
+    font-style: italic;
+    font-family: 'Segoe UI';
+    text-decoration: line-through;
+    font-size: 0.8em;
+}
+
+/* ToDo CSS End  */
+/*---------------------------------------------------------------------------------------*/
+iframe {
+    pointer-events: none;
+}
+
+img#music-img {
+    width: 50px;
+    height: auto;
+}
+
+svg {
+    fill: #ffffff;
+    position: relative;
+    top: 2px;
+}
+
+#image-img {
+    width: 40px;
+    height: auto;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+
+
+ul#buttons-container {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    right: 50px;
+}
+
+ul#buttons-container button {
+    height: 50px;
+    width: 50px;
+    background-color: hwb(334 16% 81%);
+    border-radius: 10px;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons-container li {
+    margin-right: 15px;
+    float: left;
+}
+
+img#full-img {
+    width: 30px;
+    height: auto;
+    position: relative;
+    top: 2px;
+}

@@ -1,0 +1,67 @@
+body {
+    background-image: url("assets/login-back.gif");
+}
+
+div#form-group {
+    background-color: rgba(14, 22, 43, 0.9);
+    border-radius: 10px;
+    width: 450px;
+    height: fit-content;
+    position: absolute;
+    top:200px;
+    left:520px;
+    padding: 20px;
+}
+
+#typing-effect {
+    color: #8492AF;
+    font-family: monospace;
+    font-size: 1.5em;
+    margin-bottom: 100px;
+
+}
+
+label {
+    color: rgb(41, 229, 172);
+    font-family: Verdana;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(14, 22, 43, 0.9);
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid #8492AF;
+    color: #8492AF;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    justify-content: center;
+}
+
+input::placeholder{
+    color:#8492AF;
+    font-size: 0.9em;
+}
+
+input:hover{
+    background-color: rgb(23, 35, 67)
+}
+button,#submit{
+    background-color: rgba(14, 22, 43, 0.9);
+    color: #8492AF;
+    border-radius: 10px;
+    border: 1px solid #8492AF;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+}
+
+button:active {
+    border-style: outset;
+  }
+
+button:hover{
+    background-color: rgb(23, 35, 67);
+}

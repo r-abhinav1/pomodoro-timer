@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/5016/5016723.png" />
+    <link rel="stylesheet" href="pomo.css">
+    <script defer src="pomo.js"></script>
+</head>
+
+<body>
+    <div class="intro">
+        <h1 class="logoHeader">
+            <span class="logo">Pomodoro</span>
+            <span class="logo">Timer</span>
+            <span class="logo" id="welcome-name">.</span>
+        </h1>
+    </div>
+    <!-- Timer HTML START-->
+    <div id="timer-container">
+        <img src="assets/personal-timer.jpg" id="timer-icon">
+        <span id="timer-name">Study Timer</span>
+        <span id="timer"></span><br>
+        <button id="startButton"><img src="assets/play-button.jpg" id="start-img"></button>
+        <button id="restartButton"><img src="assets/replay-button.jpg" id="restart-img"></button>
+    </div>
+    <!-- Timer HTML END -->
+
+    <!-- ToDo HTML START -->
+    <div class="to-container">
+        <img src="assets/target.png" id="target">
+        <h6>Session Goals</h6>
+        <input type="text" id="taskInput" placeholder="Type a goal...">
+        <button id="add-task" onclick="addTask()">
+            <img id="plus" src="assets/add-button.jpg">
+        </button>
+        <ul id="taskList"></ul>
+    </div>
+    <!-- ToDo HTML END -->
+
+    <div id="player"></div>
+    <ul id="buttons-container">
+        <li>
+            <button id="music">
+                <svg id="music-img" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512">
+                    <path
+                        d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z" />
+                </svg>
+            </button>
+        </li>
+
+        <li>
+            <button id="changeButton">
+                <img id="image-img" src="assets/image-img.jpg">
+            </button>
+        </li>
+        <li>
+            <button id="fullscreenButton"><img id="full-img" src="assets/fullscreen-img.jpg" alt=""></button>
+        </li>
+
+    </ul>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+      
+</body>
+
+</html>
