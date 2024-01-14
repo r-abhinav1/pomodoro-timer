@@ -1,7 +1,7 @@
 # Pomodoro Timer
 
 Welcome to the Pomodoro Timer website! This simple and efficient web application helps you manage your time effectively using the Pomodoro Technique. It includes a login page for a personalized experience and a Pomodoro page with various features to enhance your productivity.
-
+#### This project is currently hosted on GitHub Pages. You can access the live website [here](https://r-abhinav1.github.io/pomodoro-timer/).
 ## Login Page
 
 The login page provides a dynamic form with form validation to ensure accurate information. It accepts the following details:
